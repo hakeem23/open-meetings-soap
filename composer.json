@@ -3,7 +3,7 @@
     "description": "a yii2 library to make integration with apache openmeetings through soap much easier",
     "type": "Yii2-widget",
     "require": {
-        "mongosoft/yii2-soap-client": "^0.1.0"
+        "mongosoft/yii2-soap-client": "^0.1.1"
     },
     "license": "MIT",
     "authors": [
@@ -13,8 +13,8 @@
         }
     ],
     "minimum-stability": "dev",
-"autoload": {
-      "psr-4": {
-          "hakeem23\\yii2\\OpenMeetingsSoap\\": ""
-      }
+    "autoload": {
+          "psr-4": {
+              "hakeem23\\yii2\\OpenMeetingsSoap\\": ""
+          }
 }
