@@ -12,5 +12,9 @@
             "email": "hakeem23nofal@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+"autoload": {
+      "psr-4": {
+          "hakeem23\\yii2\\OpenMeetingsSoap\\": ""
+      }
 }
