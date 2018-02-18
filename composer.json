@@ -1,20 +1,19 @@
 {
-    "name": "hakeem23/openmeetings",
-    "description": "a yii2 library to make integration with apache openmeetings through soap much easier",
-    "type": "Yii2-widget",
-    "require": {
-        "mongosoft/yii2-soap-client": "^0.1.1"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Hakeem Nofal",
-            "email": "hakeem23nofal@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-          "psr-4": {
-              "hakeem23\\yii2\\OpenMeetingsSoap\\": ""
-          }
+	"name": "hakeem23/openmeetings",
+	"description": "a yii2 library to make integration with apache openmeetings through soap much easier",
+	"type": "Yii2-widget",
+	"require": {
+		"mongosoft/yii2-soap-client": "^0.1.1"
+	},
+	"license": "MIT",
+	"authors": [{
+		"name": "Hakeem Nofal",
+		"email": "hakeem23nofal@gmail.com"
+	}],
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"hakeem23\\yii2\\OpenMeetingsSoap\\": ""
+		}
+	}
 }
