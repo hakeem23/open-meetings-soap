@@ -20,63 +20,73 @@ to the require section of your composer.json file.
 
 add the following inside components.
 
+example
+
+openmeetings_host = 'http://localhost';
+
+openmeetings_port = '5080';
+
 ```
-'userService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/UserService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+'components' => [
+...
+    'userService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/UserService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'roomService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/RoomService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'roomService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/RoomService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'infoServices' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/InfoService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'infoServices' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/InfoService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'calendarService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/CalendarService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'calendarService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/CalendarService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'errorService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/ErrorService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'errorService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/ErrorService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'fileService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/FileService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'fileService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/FileService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'groupService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/GroupService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'groupService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/GroupService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
-        'recordingService' => [
-            'class' => 'mongosoft\soapclient\Client',
-            'url' => 'http://localhost:5080/openmeetings/services/RecordService?wsdl',
-            'options' => [
-                'cache_wsdl' => WSDL_CACHE_NONE,
+            'recordingService' => [
+                'class' => 'mongosoft\soapclient\Client',
+                'url' => '{openmeetings_host}:{openmeetings_port}/openmeetings/services/RecordService?wsdl',
+                'options' => [
+                    'cache_wsdl' => WSDL_CACHE_NONE,
+                ],
             ],
-        ],
+    ...
+    ]
 ```        
 
 ## Usage
