@@ -16,7 +16,7 @@ or add
 
 to the require section of your composer.json file.
 
-## main configration file
+## main.php or web.php configration file
 
 add the following inside components.
 
