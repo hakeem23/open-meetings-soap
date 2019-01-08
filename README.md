@@ -8,11 +8,15 @@ The preferred way to install this extension is through composer.
 
 Either run
 
+```
 php composer.phar require hakeem23/openmeetings 'dev-master'
+```  
 
 or add
 
+```
 "hakeem23/openmeetings": "*dev-master"
+```  
 
 to the require section of your composer.json file.
 
